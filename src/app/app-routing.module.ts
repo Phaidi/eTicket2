@@ -50,6 +50,18 @@ const routes: Routes = [
     path: 'balances',
     loadChildren: () => import('./pages/client/balances/balances.module').then( m => m.BalancesPageModule)
   },
+  {
+    path: 'adroutes',
+    loadChildren: () => import('./pages/admin/adroutes/adroutes.module').then( m => m.AdroutesPageModule)
+  },
+  {
+    path: 'addroute',
+    loadChildren: () => import('./pages/admin/addroute/addroute.module').then( m => m.AddroutePageModule)
+  },
+  {
+    path: 'adticket',
+    loadChildren: () => import('./pages/admin/adticket/adticket.module').then( m => m.AdticketPageModule)
+  },
 
 
 ];
