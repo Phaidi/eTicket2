@@ -5,7 +5,7 @@
     </ion-buttons>
     <ion-title>ticket</ion-title>
     <ion-buttons slot="end">
-      Bal: R123456
+      Bal: R{{balance}}
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -115,7 +115,7 @@
         <ion-col>
         </ion-col>
         <ion-col>
-          <ion-button routerLink="/tickets" [disabled]="!f.valid">Create Ticket</ion-button>
+          <ion-button (click)="buy_ticket()" [disabled]="!f.valid">Create Ticket</ion-button>
         </ion-col>
       </ion-row>
     </ion-item>
